@@ -1,40 +1,14 @@
-let celsius = 10
-let fahrenheit = celsius * 1.8 +32
+let cash = 50
+let price = 40
+let isStoreOpen = true
 
-console.log(fahrenheit)
-
-let subscribe = true
-let logged = true
-
-if (subscribe === true) {
-    console.log(`show the video`)
-}
-else if (logged === true) {
-    console.log(`tell the user to upgrade their subscription`)
-}
-else {
-    console.log(`tell user to log into account`)
-}
-
-let cash = 150
-let price = 200
-
-if (cash > price) {
-    console.log(`you paid extra - here's ${cash-price} dollars change`)
-}
-else if (cash===price) {
-    console.log(`you paid the exact amount, have a nice day!`)
-}
-else [
-    console.log(`not enough money - you still owe ${price - cash} dollars`)
-]
-
-let hot = true
-
-hot ? console.log(`weather is hot outisde`) : console.log(`weather is cold`)
-
-let subscribed = true
-let loggedIn = false
-
-let str = subscribed && loggedIn ? `show the video` : `hide the video`
+let str = cash >= price && isStoreOpen ? `give receipt` : `do not give receipt`
 console.log(str)
+
+let count = 1
+
+while (count <= 100) {
+    console.log(count)
+    count = count + 1
+}
+
