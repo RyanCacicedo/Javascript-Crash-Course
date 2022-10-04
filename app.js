@@ -1,14 +1,16 @@
-let cash = 50
-let price = 40
-let isStoreOpen = true
-
-let str = cash >= price && isStoreOpen ? `give receipt` : `do not give receipt`
-console.log(str)
-
-let count = 1
-
-while (count <= 100) {
-    console.log(count)
-    count = count + 1
+for (let i = 1; i <= 20; i++) {
+    if (i%3===0 && i%5===0) {
+     console.log(`${i} -> Frontend simplified`)
+    }
+  else if (i%3===0) {
+    console.log(`${i} -> frontend`)
+   }
+  else if (i%5===0) {
+    console.log(`${i} -> simplified`)
+   }
+ else {
+    console.log(`${i} -> ${i}`)
+   }
+   
 }
 
