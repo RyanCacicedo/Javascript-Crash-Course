@@ -3,13 +3,13 @@ let fahrenheit = celsius * 1.8 +32
 
 console.log(fahrenheit)
 
-let subscribed = true
-let loggedIn = true
+let subscribe = true
+let logged = true
 
-if (subscribed === true) {
+if (subscribe === true) {
     console.log(`show the video`)
 }
-else if (loggedIn === true) {
+else if (logged === true) {
     console.log(`tell the user to upgrade their subscription`)
 }
 else {
@@ -28,3 +28,13 @@ else if (cash===price) {
 else [
     console.log(`not enough money - you still owe ${price - cash} dollars`)
 ]
+
+let hot = true
+
+hot ? console.log(`weather is hot outisde`) : console.log(`weather is cold`)
+
+let subscribed = true
+let loggedIn = false
+
+let str = subscribed && loggedIn ? `show the video` : `hide the video`
+console.log(str)
