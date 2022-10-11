@@ -1,5 +1,9 @@
-let arr = [1, 9, 4, 16]
+let arr = [1, 5, 10, 3]
 
-let newArray = arr.map(element => undefined)
+let newArray = []
 
-    console.log(newArray)
+for (let i = 0; i < arr.length; ++i) {
+    newArray.push(arr[i] * 100)
+}
+
+console.log(newArray)
