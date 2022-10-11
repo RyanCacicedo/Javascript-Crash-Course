@@ -1,9 +1,27 @@
-let arr = [1, 5, 10, 3]
+let users = [
+    {
+        username: `Ryan`,
+        email: `ryancacicedo@gmail.com`,
+        password: `test123`,
+        subscriptionStatus: `VIP`,
+        discordId: `Ryan Cac#001`,
+        lessonsCompleted: [0, 1],
+    }
+];
 
-let newArray = []
-
-for (let i = 0; i < arr.length; ++i) {
-    newArray.push(arr[i] * 100)
+function login(email, password) {
+    for (let i = 0; i < users.length; ++i) {
+        if (users[i].email === email) {
+            if (users[i].password === password) {
+                console.log(`log the user in - the details are correct`)
+            }
+            else {
+                console.log(`password is incorrect - try again`)
+            }
+            return
+        }
+    }
+    console.log(`could not find an email that matches`)
 }
 
-console.log(newArray)
+login(`ryancacicedo@gmail.com`, `test123`)
