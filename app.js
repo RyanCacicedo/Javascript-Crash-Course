@@ -1,5 +1,2 @@
-// First way of accessing an element
-console.log(document.querySelector(`#title`))
-
-// Second way of accessing an element
-console.log(document.getElementsById(`title`))
+// How to change the HTML of any element with DOM
+document.querySelector(`#title`).innerHTML = `Ryan`
