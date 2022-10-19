@@ -16,7 +16,9 @@ console.log(emailRef);
 
 // 2. Async/Await
 async function main() {
-    await fetch("https://jsonplaceholder.typicode.com/users/1")
+   const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+    const data = await response.json()
+    emailRef.innerHTML = data.email
 }
 
 main()
